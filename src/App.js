@@ -3,8 +3,8 @@ import Menu from "./components/Menu/Menu";
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <Menu />;
+      <h1>Mo's Cookie Dough</h1>
+      <Menu />
     </>
   );
 }

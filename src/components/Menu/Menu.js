@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Button from "../../UI/Button/Button";
 
-function Menu() {
+function Menu(props) {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -9,8 +10,13 @@ function Menu() {
 
   return (
     <div>
-      {showMenu && <h1>Chocolate Chip Cookies</h1>}
-      <button onClick={toggleMenu}>Show Menu</button>
+      {showMenu && (
+        <div>
+          <h2>Chocolate Chip Cookies</h2>
+          <h2>Snickerdoodles</h2>
+        </div>
+      )}
+      <Button onClick={toggleMenu}>Show Menu</Button>
     </div>
   );
 }
