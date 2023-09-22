@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../../UI/Button/Button";
+import classes from "../Menu/menu.module.css";
 
 function Menu(props) {
   const [showMenu, setShowMenu] = useState(false);
@@ -9,14 +10,16 @@ function Menu(props) {
   };
 
   return (
-    <div>
+    <div className={classes.container}>
       {showMenu && (
         <div>
           <h2>Chocolate Chip Cookies</h2>
           <h2>Snickerdoodles</h2>
         </div>
       )}
-      <Button onClick={toggleMenu}></Button>
+      <div className={classes.button}>
+        <Button onClick={toggleMenu} showMenu={showMenu}></Button>
+      </div>
     </div>
   );
 }
