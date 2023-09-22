@@ -16,7 +16,7 @@ function Menu(props) {
           <h2>Snickerdoodles</h2>
         </div>
       )}
-      <Button onClick={toggleMenu}>Show Menu</Button>
+      <Button onClick={toggleMenu}></Button>
     </div>
   );
 }
