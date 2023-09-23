@@ -1,9 +1,10 @@
 import Menu from "./components/Menu/Menu";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
     <>
-      <h1>Mo's Cookie Dough</h1>
+      <Main />
       <Menu />
     </>
   );
